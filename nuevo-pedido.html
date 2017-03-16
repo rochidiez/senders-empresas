@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Thu Mar 16 2017 00:27:47 GMT+0000 (UTC)  -->
+<html data-wf-page="58c6ffb12db33b7017386bc7" data-wf-site="58c6da9ffdbad0f2378502c8">
+<head>
+  <meta charset="utf-8">
+  <title>Nuevo pedido :: Senders empresas</title>
+  <meta content="Realiza un nuevo pedido para tu empresa. Vos vendé, nosotros lo hacemos llegar." name="description">
+  <meta content="Nuevo pedido :: Senders empresas" property="og:title">
+  <meta content="Realiza un nuevo pedido para tu empresa. Vos vendé, nosotros lo hacemos llegar." property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/senders-empresas.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <a class="brandlogo w-inline-block" href="https://www.senders.com.ar/senders-empresas.html"><img src="images/Logo_empresa.svg">
+      </a>
+      <div class="navbar_menu"><a class="navbar_menu__btn w-button" href="mis-pedidos.html">Mis pedidos</a><a class="navbar_menu__btn w-button" href="nuevo-pedido.html">Nuevo pedido</a><a class="navbar_menu__btn w-button" href="index.html">Cerrar Sesión</a>
+      </div>
+    </div>
+  </div>
+  <div class="seccion">
+    <div class="container">
+      <h1 class="seccion--title">Realiza un nuevo pedido para tus clientes</h1>
+      <div class="w-form">
+        <div data-name="Senders Empresas : Nuevo Pedido" id="wf-form-Senders-Empresas-Nuevo-Pedido" >
+          <div class="datos_cliente">
+            <h3>DATOS DEL CLIENTE</h3>
+            <label for="Clientes-Nombre">Nombre del cliente</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Clientes Nombre" id="Clientes-Nombre" maxlength="256" name="Clientes-Nombre" placeholder="Ej: Juan Perez" required="required" type="text">
+            <label for="Clientes-Mail">Email</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Clientes Mail" id="Clientes-Mail" maxlength="256" name="Clientes-Mail" placeholder="Ej: juan@senders.com.ar" required="required" type="email">
+            <label for="Clientes-Tel">Telefono</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Clientes Tel" id="Clientes-Tel" maxlength="256" name="Clientes-Tel" placeholder="Ej: 11 2345 1223" required="required" type="text">
+          </div>
+          <div class="donderetiramos">
+            <h3>¿POR DÓNDE RETIRAMOS?</h3>
+            <div class="defaultdireccion">
+              <div class="w-radio">
+                <input class="w-radio-input" data-name="Radio" id="radio" name="Radio" type="radio" value="Radio">
+                <label class="w-form-label" for="radio">Delgado 702, piso 6, dpto A, Colegiales.</label>
+              </div>
+            </div>
+            <div class="adddireccion" id="FocusNuevaDireccion">
+              <a class="addlink w-inline-block" href="#FocusNuevaDireccion">
+                <div class="linkaddcomplete" data-ix="showformadd"><span class="more">+</span>&nbsp; Agregá una nueva dirección</div>
+              </a>
+              <div class="desplegable">
+                <h5>Agrega una nueva dirección de retiro</h5>
+                <label for="field-4">Calle, altura, piso y dpto</label>
+                <input class="w-input" data-name="Field 4" id="field-4" maxlength="256" name="field-4" placeholder="Ej: Delgado 702 piso 6" required="required" type="text">
+                <label for="field-5">¿Entre qué calles?</label>
+                <input class="w-input" data-name="Field 5" id="field-5" maxlength="256" name="field-5" placeholder="Ej: Teodoro Garcia y Palpa" required="required" type="text">
+                <label for="field-6">Código postal</label>
+                <input class="form text-field w-input" data-name="Field 6" id="field-6" maxlength="256" name="field-6" placeholder="Ej:1426" required="required" type="text">
+                <label for="Donde-Retiramos-Barrio">Barrio</label>
+                <select class="dropdownform w-select" data-name="Donde Retiramos Barrio" id="Donde-Retiramos-Barrio" name="Donde-Retiramos-Barrio" required="required">
+                  <option value="">Selecciona barrio</option>
+                  <option value="Agronomia">Agronomía</option>
+                  <option value="Almagro">Almagro</option>
+                  <option value="Barracas">Barracas</option>
+                  <option value="Belgrano">Belgrano</option>
+                  <option value="Boedo">Boedo</option>
+                  <option value="Caballito">Caballito</option>
+                  <option value="Chacarita">Chacarita</option>
+                  <option value="Coghlan">Coghlan</option>
+                  <option value="Colegiales">Colegiales</option>
+                  <option value="Constitución">Constitución</option>
+                  <option value="Flores">Flores</option>
+                  <option value="Floresta">Floresta</option>
+                  <option value="La Boca">La Boca</option>
+                  <option value="La Paternal">La Paternal</option>
+                  <option value="Liniers">Liniers</option>
+                  <option value="Mataderos">Mataderos</option>
+                  <option value="Monte Castro">Monte Castro</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Nueva Pompeya">Nueva Pompeya</option>
+                  <option value="Nuñez">Nuñez</option>
+                  <option value="Palermo">Palermo</option>
+                  <option value="Parque Avellaneda">Parque Avellaneda</option>
+                  <option value="Parque Chacabuco">Parque Chacabuco</option>
+                  <option value="Parque Chas">Parque Chas</option>
+                  <option value="Parque Patricios">Parque Patricios</option>
+                  <option value="Puerto Madero">Puerto Madero</option>
+                  <option value="Recoleta">Recoleta</option>
+                  <option value="Retiro">Retiro</option>
+                  <option value="Saavedra">Saavedra</option>
+                  <option value="San Cristóbal">San Cristóbal</option>
+                  <option value="San Nicolás">San Nicolás</option>
+                  <option value="San Telmo">San Telmo</option>
+                  <option value="Versalles">Versalles</option>
+                  <option value="Villa Crespo">Villa Crespo</option>
+                  <option value="Villa Devoto">Villa Devoto</option>
+                  <option value="Villa General Mitre">Villa General Mitre</option>
+                  <option value="Villa Lugano">Villa Lugano</option>
+                  <option value="Villa Luro">Villa Luro</option>
+                  <option value="Villa Ortúzar">Villa Ortúzar</option>
+                  <option value="Villa Pueyrredón">Villa Pueyrredón</option>
+                  <option value="Villa Real">Villa Real</option>
+                  <option value="Villa Riachuelo">Villa Riachuelo</option>
+                  <option value="Villa Santa Rita">Villa Santa Rita</option>
+                  <option value="Villa Soldati">Villa Soldati</option>
+                  <option value="Villa Urquiza">Villa Urquiza</option>
+                  <option value="Villa del Parque">Villa del Parque</option>
+                  <option value="Vélez Sarsfield">Vélez Sarsfield</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="dondeentregamos">
+            <h3>¿POR DÓNDE ENTREGAMOS?</h3>
+            <label for="Donde-Entregamos-Nombre">Nombre de quien recibe</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Donde Entregamos Nombre" id="Donde-Entregamos-Nombre" maxlength="256" name="Donde-Entregamos-Nombre" placeholder="Ej: Fernando Lopez" required="required" type="text">
+            <label for="Donde-Entregamos-Mail">Mail de quien recibe</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Donde Entregamos Mail" id="Donde-Entregamos-Mail" maxlength="256" name="Donde-Entregamos-Mail" placeholder="Ej: fernando@senders.com.ar" required="required" type="email">
+            <label for="Donde-Entregamos-Direccion">Calle, altura, piso y dpto</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Donde Entregamos Direccion" id="Donde-Entregamos-Direccion" maxlength="256" name="Donde-Entregamos-Direccion" placeholder="Ej: Vuelta de Obligado 3135 5to B" required="required" type="text">
+            <label for="FieDonde-Entregamos-Calles">¿Entre qué calles?</label>
+            <input class="textfield_nuevoenvio w-input" data-name="FieDonde Entregamos Calles" id="FieDonde-Entregamos-Calles" maxlength="256" name="FieDonde-Entregamos-Calles" placeholder="Ej: Aguilar y Céspedes" required="required" type="text">
+            <label for="Donde-Entregamos-CodP">Código postal</label>
+            <input class="textfield_nuevoenvio w-input" data-name="Donde Entregamos CodP" id="Donde-Entregamos-CodP" maxlength="256" name="Donde-Entregamos-CodP" placeholder="Ej: 1425" required="required" type="text">
+            <label for="Donde-Entregamos-Barrio">Barrio</label>
+            <select class="dropdownform w-select" data-name="Donde Entregamos Barrio" id="Donde-Entregamos-Barrio" name="Donde-Entregamos-Barrio" required="required">
+              <option value="">Selecciona barrio</option>
+              <option value="Agronomia">Agronomía</option>
+              <option value="Almagro">Almagro</option>
+              <option value="Barracas">Barracas</option>
+              <option value="Belgrano">Belgrano</option>
+              <option value="Boedo">Boedo</option>
+              <option value="Caballito">Caballito</option>
+              <option value="Chacarita">Chacarita</option>
+              <option value="Coghlan">Coghlan</option>
+              <option value="Colegiales">Colegiales</option>
+              <option value="Constitución">Constitución</option>
+              <option value="Flores">Flores</option>
+              <option value="Floresta">Floresta</option>
+              <option value="La Boca">La Boca</option>
+              <option value="La Paternal">La Paternal</option>
+              <option value="Liniers">Liniers</option>
+              <option value="Mataderos">Mataderos</option>
+              <option value="Monte Castro">Monte Castro</option>
+              <option value="Montserrat">Montserrat</option>
+              <option value="Nueva Pompeya">Nueva Pompeya</option>
+              <option value="Nuñez">Nuñez</option>
+              <option value="Palermo">Palermo</option>
+              <option value="Parque Avellaneda">Parque Avellaneda</option>
+              <option value="Parque Chacabuco">Parque Chacabuco</option>
+              <option value="Parque Chas">Parque Chas</option>
+              <option value="Parque Patricios">Parque Patricios</option>
+              <option value="Puerto Madero">Puerto Madero</option>
+              <option value="Recoleta">Recoleta</option>
+              <option value="Retiro">Retiro</option>
+              <option value="Saavedra">Saavedra</option>
+              <option value="San Cristóbal">San Cristóbal</option>
+              <option value="San Nicolás">San Nicolás</option>
+              <option value="San Telmo">San Telmo</option>
+              <option value="Versalles">Versalles</option>
+              <option value="Villa Crespo">Villa Crespo</option>
+              <option value="Villa Devoto">Villa Devoto</option>
+              <option value="Villa General Mitre">Villa General Mitre</option>
+              <option value="Villa Lugano">Villa Lugano</option>
+              <option value="Villa Luro">Villa Luro</option>
+              <option value="Villa Ortúzar">Villa Ortúzar</option>
+              <option value="Villa Pueyrredón">Villa Pueyrredón</option>
+              <option value="Villa Real">Villa Real</option>
+              <option value="Villa Riachuelo">Villa Riachuelo</option>
+              <option value="Villa Santa Rita">Villa Santa Rita</option>
+              <option value="Villa Soldati">Villa Soldati</option>
+              <option value="Villa Urquiza">Villa Urquiza</option>
+              <option value="Villa del Parque">Villa del Parque</option>
+              <option value="Vélez Sarsfield">Vélez Sarsfield</option>
+            </select>
+          </div>
+          <input class="finalizar w-button" type="submit" value="SIGUIENTE">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+</body>
+</html>
